@@ -6,7 +6,7 @@
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 22:18:08 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/16 22:44:24 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/16 22:48:04 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,12 +29,13 @@ class Intern:
 		return self.Coffe()
 
 a = Intern("")
-print(a)
+print("No name Intern class:\n", a, "\n")
 b = Intern("Mark")
-print(b)
+print("Mark named Intern class:\n", b, "\n")
 
-print(b.make_coffee())
+print("Intern Class 'Mark' making coffe\n", b.make_coffee(), "\n")
 
+print("No name Intern Class work Exception\n")
 a.work()
 
 
