@@ -6,7 +6,7 @@
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 15:40:45 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/16 15:53:50 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/16 21:18:34 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,9 +24,9 @@ def my_var():
 	h = (42, )
 	i = set()
 	
-	print(str(a) + " has a type " + str(type(a)))	
+	print("%i has a type %s" % (a, type(a)))
 	print(str(b) + " has a type " + str(type(b)))
-	print(str(c) + " has a type " + str(type(c)))
+	print(c, " has a type ", type(c))
 	print(str(d) + " has a type " + str(type(d)))
 	print(str(e) + " has a type " + str(type(e)))
 	print(str(f) + " has a type " + str(type(f)))
