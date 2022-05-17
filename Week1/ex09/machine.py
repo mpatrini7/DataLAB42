@@ -6,9 +6,12 @@
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 22:48:51 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/17 19:19:31 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/17 23:51:25 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+import beverages
 class CoffeeMachine:
 	def __init__(self):
+
+	
