@@ -6,15 +6,12 @@
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 22:18:08 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/16 22:48:04 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/17 23:36:15 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 class Intern:
-	def __init__(self, name):
-		if name == "":
-			self.name = "My name? I’m nobody, an intern, I have no name."
-		else:
+	def __init__(self, name = "My name? I’m nobody, an intern, I have no name."):
 			self.name = name
 
 	def __str__(self):
@@ -28,7 +25,7 @@ class Intern:
 	def	make_coffee(self):
 		return self.Coffe()
 
-a = Intern("")
+a = Intern()
 print("No name Intern class:\n", a, "\n")
 b = Intern("Mark")
 print("Mark named Intern class:\n", b, "\n")
