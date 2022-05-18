@@ -6,7 +6,7 @@
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 22:48:51 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/18 04:56:30 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/18 19:31:57 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,12 @@ from random import randint
 class CoffeeMachine:
 	def __init__(self):
 		self.used = 0
-	a = beverages.HotBeverage("empty cup", 0.90, "An empty cup?! Gimme my money back!")
+	class EmptyCup(beverages.HotBeverage):
+		def __init__(self):
+			self.name = "empty cup"
+			self.price = 0.90
+			self.descr = "An empty cup?! Gimme my money back!"
+	a = EmptyCup()
 	def BrokenMachineException(self):
 		raise Exception("\033[0;31mThis coffee machine has to be repaired.\033[0m")
 	def repair(self):
@@ -25,9 +30,9 @@ class CoffeeMachine:
 			self.BrokenMachineException()
 		self.used += 1
 		if (randint(0, 1000) % 7) == 0:
-			return "You got a cup of {} for {}!".format(self.a.name, self.a.price)
+			return a
 		else:
-			return "You got a cup of {} for {}!".format(drink.name, drink.price)
+			return drink
 
 a = beverages.HotBeverage("coffe", 0.40, "A coffee, to stay awake.")
 b = beverages.HotBeverage("tea", 0.30)
@@ -39,7 +44,7 @@ list = [a, b, c, d]
 for _ in range(22):
 	num = randint(0, 3)
 	try:
-		print(m.serve(list[num]))
+		print("\033[0;32mYou got:\033[0m\n{}".format(m.serve(list[num])))
 	except Exception as e:
 		print(e)
 		m.repair()
