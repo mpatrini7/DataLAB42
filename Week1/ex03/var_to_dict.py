@@ -6,7 +6,7 @@
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 17:51:53 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/16 19:01:14 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/18 04:57:12 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,4 +17,4 @@ d=[
 dict = {d[i]: d[i] for i in range(0, len(d), 1)}
 
 for x in dict:
-	print(str(x[1]) + " : " +  str(x[0]))
+	print("{} : {}".format(x[1] ,x[0]))

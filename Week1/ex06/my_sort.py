@@ -6,7 +6,7 @@
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 18:30:35 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/17 23:33:21 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/18 04:58:14 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,4 +17,4 @@ d = dict(sorted(d.items()))
 d = dict(sorted(d.items(), key=lambda item: item[1]))
 
 for key, value in d.items():
-    print(key, ' : ', value)
+    print("{} : {}".format(value, key))

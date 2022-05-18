@@ -6,12 +6,9 @@
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 15:40:45 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/18 00:11:38 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/18 04:51:53 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-from concurrent.futures.process import _global_shutdown
-
 
 def my_var():
 	a = 42
@@ -24,14 +21,15 @@ def my_var():
 	h = (42, )
 	i = set()
 	
-	print("%i has a type %s" % (a, type(a)))
-	print(str(b) + " has a type " + str(type(b)))
-	print(c, " has a type ", type(c))
+	print("{} has a type {}".format( a, type(a)))
+	print("{} has a type {}".format( b, type(b)))
+	print("{} has a type {}".format( c, type(c)))
 	print("{} has a type {}".format( d, type(d)))
-	print(str(e) + " has a type " + str(type(e)))
-	print(str(f) + " has a type " + str(type(f)))
-	print(str(g) + " has a type " + str(type(g)))
-	print(str(h) + " has a type " + str(type(h)))
-	print(str(i) + " has a type " + str(type(i)))
+	print("{} has a type {}".format( e, type(e)))
+	print("{} has a type {}".format( f, type(f)))
+	print("{} has a type {}".format( g, type(g)))
+	print("{} has a type {}".format( h, type(h)))
+	print("{} has a type {}".format( i, type(i)))
+
 	
 my_var()
