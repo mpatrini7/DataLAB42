@@ -6,7 +6,7 @@
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 15:39:49 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/18 03:51:00 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/18 03:59:59 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,4 +27,4 @@ if len(sys.argv) == 3:
 		else:
 			print("Numbers only!")
 else:
-	print("Wrong number of arguments!")
+	print("Wrong number of arguments! Use 'num + num' or 'float + float' 🤯")

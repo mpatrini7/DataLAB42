@@ -6,7 +6,7 @@
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 15:39:42 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/16 15:39:44 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/18 03:57:40 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,4 +18,4 @@ if len(sys.argv) == 4:
 	else:
 		print("Numbers only!")
 else:
-	print("Wrong number of arguments!")
+	print("Wrong number of arguments! REALLY?!?!?!? Use HH MM SS\nP.S. Gio mi aspettavo di piú da te 😔")
