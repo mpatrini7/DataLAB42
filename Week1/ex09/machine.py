@@ -6,7 +6,7 @@
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 22:48:51 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/18 19:31:57 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/19 03:51:03 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ for _ in range(22):
 	num = randint(0, 3)
 	try:
 		print("\033[0;32mYou got:\033[0m\n{}".format(m.serve(list[num])))
-	except Exception as e:
-		print(e)
+	except Exception as ex:
+		print(ex)
 		m.repair()
 		print("\033[0;32mThe machine has been repaired.\033[0m")
