@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    capitals.py                                        :+:      :+:    :+:    #
+#    capital_city.py                                    :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: mpatrini <mpatrini@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/16 18:08:25 by mpatrini          #+#    #+#              #
-#    Updated: 2022/05/16 18:29:08 by mpatrini         ###   ########.fr        #
+#    Updated: 2022/05/23 06:28:44 by mpatrini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,11 +27,10 @@ capital_cities = {
 
 if len(sys.argv) == 2:
 	if sys.argv[1] in states.keys():
-		for x in states:
-			if (x == sys.argv[1]):
-				for y in capital_cities:
-					if (y == states[x]):
-						print(capital_cities[y])
+		if states[sys.argv[1]] in capital_cities.keys():
+			print(capital_cities[states[sys.argv[1]]])
 	else:
 		print("Unknown state")
+else:
+	print("Argument Error!")
 			
